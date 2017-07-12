@@ -121,7 +121,7 @@
 						}
 
 						svOriginal.after($placeholder);
-						svOriginal.addClass('ng-hide');
+						svOriginal.addClass('sv-visibility-hidden');
 
 						// cache options, helper and original element reference
 						$original = svOriginal;
@@ -240,7 +240,7 @@
 						sortingInProgress = false;
 						$placeholder.remove();
 						$helper.remove();
-						$original.removeClass('ng-hide');
+						$original.removeClass('sv-visibility-hidden');
 
 						candidates = void 0;
 						$placeholder = void 0;
