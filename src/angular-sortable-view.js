@@ -121,7 +121,7 @@
 						}
 
 						svOriginal.after($placeholder);
-						svOriginal.addClass('sv-visibility-hidden');
+						svOriginal.addClass('sv-hide');
 
 						// cache options, helper and original element reference
 						$original = svOriginal;
@@ -240,7 +240,7 @@
 						sortingInProgress = false;
 						$placeholder.remove();
 						$helper.remove();
-						$original.removeClass('sv-visibility-hidden');
+						$original.removeClass('sv-hide');
 
 						candidates = void 0;
 						$placeholder = void 0;
@@ -539,6 +539,11 @@
 		'.sv-visibility-hidden{' +
 			'visibility: hidden !important;' +
 			'opacity: 0 !important;' +
+		'}' +
+		'.sv-hide{' +
+			'visibility: hidden !important;' +
+			'opacity: 0 !important;' +
+			'height: 0;'
 		'}' +
 		'</style>'
 	].join(''));
